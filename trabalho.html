@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="buttons" id="buttonI">Idade</button>
+    <button class="buttons" id="buttonFatorial">Fatorial</button>
+    <button class="buttons" id="buttonPotencia">Potencia</button>
+    <button class="buttons" id="buttonCA">Caixa Alta</button>
+
+</body>
+
+    
+    <script>
+            function idade(){
+                let i = prompt("Insira sua idade: ")
+                alert("Você tem "+i+" anos.");
+            }
+            
+
+
+
+        
+
+        
+        
+
+            
+            function fatorial(){
+                    let n,i 
+                    n = prompt("Insira um número: ")
+                    i = n
+                    while(i>1){
+                        n = n * (i-1)
+                        --i
+                    }
+                    alert("O fatorial do seu numero é : " +n)
+                }
+
+        
+
+    
+        
+
+            
+
+            function potencia(){
+                    let n,p, nfixo
+                    n = prompt("Insira seu numero: ")
+                    p = prompt("Insira a potencia: ")
+                    nfixo = n
+                    while(p>1){
+                        n = n * nfixo
+                        --p
+                    }
+                    alert("O seu número elavado a "+p+" é : "+n)
+                }
+        
+
+        
+            function CaixaAlta(){
+                let txt
+                txt = prompt("Insira um texto para ser convertido em caixa alta ")
+                txtCA = txt.toUpperCase()
+                alert(txtCA)
+            }
+            document.getElementById("buttonI").addEventListener("click",idade)
+            document.getElementById("buttonFatorial").addEventListener("click",fatorial)
+            document.getElementById("buttonPotencia").addEventListener("click",potencia)
+            document.getElementById("buttonCA").addEventListener("click",CaixaAlta)
+
+    </script>
+    
+
+</html>
